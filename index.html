@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Glow Studio | Maquiagem e Autoestima</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="container nav-container">
+            <div class="logo">The Glow Studio</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#noivas">Noivas</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato" class="btn-nav">Agendar</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="img/hero.mp4" type="video/mp4">
+        </video>
+        
+        <div class="hero-overlay"></div>
+        
+        <div class="container hero-content">
+            <h1>The Glow Studio</h1>
+            <p class="subtitle">Maquiagem com sofisticação, técnica e propósito para realçar sua beleza e fortalecer sua autoestima.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/5500000000000" target="_blank" class="btn btn-primary">✨ Agendar horário</a>
+                <a href="#portfolio" class="btn btn-outline">📷 Ver portfólio</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section-padrao">
+        <div class="container sobre-grid">
+            <div class="sobre-img">
+                <img src="img/maquiadora-glow.png" alt="Maquiadora The Glow Studio">
+            </div>
+            <div class="sobre-text">
+                <h2>Mais do que maquiagem: é sobre autoestima.</h2>
+                <p>O The Glow Studio nasceu com um propósito claro: criar uma experiência de beleza que vá além do espelho. Acreditamos que maquiagem não é sobre esconder, e sim sobre revelar — realçar o que você já tem de mais bonito.</p>
+                <ul class="sobre-list">
+                    <li><i class="fas fa-check"></i> Atendimento personalizado</li>
+                    <li><i class="fas fa-check"></i> Acabamento elegante para fotos</li>
+                    <li><i class="fas fa-check"></i> Durabilidade e conforto</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="bg-nude">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Clique nos cartões abaixo para ver os detalhes.</p>
+            </div>
+            
+            <div class="servicos-grid">
+                <div class="card-servico" onclick="selecionarServico(this)">
+                    <div class="card-img">
+                        <img src="img/social.jpg" alt="Maquiagem Social">
+                    </div>
+                    <div class="card-content">
+                        <h3>Maquiagem Social</h3>
+                        <p>Ideal para formaturas e jantares. Um visual elegante e equilibrado.</p>
+                        <a href="https://wa.me/5500000000000" class="btn-link">Reservar</a>
+                    </div>
+                </div>
+
+                <div class="card-servico" onclick="selecionarServico(this)">
+                    <div class="card-img">
+                        <img src="img/artistica.jpg" alt="Maquiagem Artística">
+                    </div>
+                    <div class="card-content">
+                        <h3>Maquiagem Artística</h3>
+                        <p>Criatividade e cores para editoriais ou festas temáticas.</p>
+                        <a href="https://wa.me/5500000000000" class="btn-link">Reservar</a>
+                    </div>
+                </div>
+
+                <div class="card-servico" onclick="selecionarServico(this)">
+                    <div class="card-img">
+                        <img src="img/maquiagem-noiva.jpg" alt="Maquiagem Noiva">
+                    </div>
+                    <div class="card-content">
+                        <h3>Maquiagem para Noivas</h3>
+                        <p>Sofisticação e resistência para o dia mais importante.</p>
+                        <a href="https://wa.me/5500000000000" class="btn-link">Orçamento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="noivas" class="section-padrao">
+        <div class="container noivas-container">
+            <div class="noivas-text">
+                <h2>Noivas que brilham</h2>
+                <p>A maquiagem da noiva precisa ser especial: resistir à emoção e ficar impecável em fotos. Aqui, criamos uma beleza atemporal para você.</p>
+                <div class="mini-grid">
+                    <span><i class="fas fa-gem"></i> Beleza Atemporal</span>
+                    <span><i class="fas fa-camera"></i> Perfeita para Fotos</span>
+                </div>
+                <a href="https://wa.me/5500000000000" class="btn btn-primary">💍 Quero ser uma noiva Glow</a>
+            </div>
+            <div class="noivas-img">
+                <img src="img/maquiagem-noiva.png" alt="Noiva Sorrindo">
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="bg-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="color: var(--champagne);">Portfólio</h2>
+                <p style="color: #ccc;">Resultados reais. Beleza real.</p>
+            </div>
+            <div class="portfolio-grid">
+                <img src="img/maquiagem-noiva.jpg" alt="Detalhe Maquiagem Artística">
+                <img src="img/social.jpg" alt="Cliente Social">
+                <img src="img/artistica.jpg" alt="Produção Artística">
+                <img src="img/detalhe-olho.jpg" alt="Detalhe Olho">
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="bg-nude">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que dizem nossas clientes</h2>
+            </div>
+            <div class="depoimentos-grid">
+                <div class="depoimento-card">
+                    <p>"Me senti linda e confiante. A maquiagem durou a festa inteira!"</p>
+                    <span>— Ana Silva</span>
+                </div>
+                <div class="depoimento-card">
+                    <p>"Atendimento impecável. A maquiadora entendeu exatamente o que eu queria."</p>
+                    <span>— Beatriz Costa</span>
+                </div>
+                <div class="depoimento-card">
+                    <p>"Minha maquiagem de noiva ficou perfeita nas fotos. Recomendo muito!"</p>
+                    <span>— Carla Dias</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padrao">
+        <div class="container faq-container">
+            <div class="section-header">
+                <h2>Dúvidas Frequentes</h2>
+            </div>
+            <details>
+                <summary>A maquiagem dura o evento todo?</summary>
+                <p>Sim! Utilizamos técnicas de fixação e produtos à prova d'água para garantir durabilidade.</p>
+            </details>
+            <details>
+                <summary>Vocês fazem teste de noiva?</summary>
+                <p>Sim, o teste é fundamental e está incluso no pacote de noivas.</p>
+            </details>
+            <details>
+                <summary>Como agendar?</summary>
+                <p>O agendamento é feito exclusivamente pelo WhatsApp com sinal de 30%.</p>
+            </details>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="container footer-content">
+            <h2>Pronta para realçar sua luz?</h2>
+            <p>📍 Atendimento com hora marcada | 🕒 Seg a Sáb - 09h às 19h</p>
+            <a href="https://wa.me/5500000000000" class="btn btn-primary">💬 Agendar no WhatsApp</a>
+            <p class="copyright">© 2025 The Glow Studio.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
