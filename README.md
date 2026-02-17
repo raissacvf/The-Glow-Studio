@@ -6,13 +6,6 @@ O site apresenta uma experiência moderna e clean, com seções completas como s
 
 ---
 
-## 📌 Demonstração
-
-🔗 **Preview do projeto:** (adicione aqui o link do GitHub Pages, se tiver)  
-Ex: https://seuusuario.github.io/the-glow-studio/
-
----
-
 ## 🎯 Objetivo do projeto
 
 Este projeto foi criado com fins de estudo e prática, com foco em:
