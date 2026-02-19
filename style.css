@@ -199,3 +199,14 @@ footer { background-color: var(--brown-coffee); color: var(--champagne); text-al
     .sobre-grid, .noivas-container, .depoimentos-grid { grid-template-columns: 1fr; text-align: center; }
     .sobre-img, .noivas-img { order: -1; margin-bottom: 20px; }
 }
+
+.footer-glow {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #e8dcdc; /* tom claro suave */
+  text-align: center;
+  font-weight: 400;
+}
